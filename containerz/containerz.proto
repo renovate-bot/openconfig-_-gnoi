@@ -437,8 +437,9 @@ message StartContainerRequest {
   // capabilities can be found in
   // https://man7.org/linux/man-pages/man7/capabilities.7.html.
   // This is default set of capabilities:
-  // AUDIT_WRITE, CHOWN, DAC_OVERRIDE, FOWNER, FSETID, KILL, MKNOD,
-  // NET_BIND_SERVICE, NET_RAW, SETFCAP, SETGID, SETPCAP, SETUID, SYS_CHROOT.
+  // CAP_AUDIT_WRITE, CAP_CHOWN, CAP_DAC_OVERRIDE, CAP_FOWNER, CAP_FSETID,
+  // CAP_KILL, CAP_MKNOD, CAP_NET_BIND_SERVICE, CAP_NET_RAW, CAP_SETFCAP,
+  // CAP_SETGID, CAP_SETPCAP, CAP_SETUID, CAP_SYS_CHROOT.
   Capabilities cap = 9;
 
   message Restart {
